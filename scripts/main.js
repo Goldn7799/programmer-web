@@ -216,9 +216,7 @@ const page = {
     <center class="comunication"><h2>Comunication</h2>
       <button onclick="window.open('https://chat.whatsapp.com/L3l0NRMLmlj55rNj88LrLQ')" class="btn btn-success"><i class="fa-brands fa-whatsapp fa-xl"></i><canvas height="0" width="5"></canvas>WhatsApp</button>
     </center>
-    <canvas height="50"></canvas>
-    <center><p>Copyright SGStudio 2023</p></center>
-    <canvas height="5"></canvas>
+    <center style="margin-top: 25px; margin-bottom: 10px"><p>Copyright SGStudio 2023</p></center>
     </div>
     `
     document.body.classList.add("Ndark", "text-light");

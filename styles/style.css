@@ -9,6 +9,11 @@
   -o-border-radius: 50%;
 }
 
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .Ndark {
   background-color: rgb(41, 41, 41);
 }
