@@ -38,7 +38,7 @@ const HomeSC = ()=>{
       };
     }, 100)
   }
-  const titles = "Programmer Comunityes";
+  const titles = "Programmer Comunity";
   let ltitle = "";
   const fillTitle = ()=>{
     ltitle++;
@@ -216,7 +216,7 @@ const page = {
     <center class="comunication"><h2>Comunication</h2>
       <button onclick="window.open('https://chat.whatsapp.com/L3l0NRMLmlj55rNj88LrLQ')" class="btn btn-success"><i class="fa-brands fa-whatsapp fa-xl"></i><canvas height="0" width="5"></canvas>WhatsApp</button>
     </center>
-    <center style="margin-top: 25px; margin-bottom: 10px"><p>Copyright SGStudio 2023</p></center>
+    <center style="margin-top: 25px; margin-bottom: 10px"><p>Copyright ©SGStudio 2023</p></center>
     </div>
     `
     document.body.classList.add("Ndark", "text-light");
