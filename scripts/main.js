@@ -5,9 +5,9 @@ let theme = "light";
 //Script
 const HomeSC = ()=>{
   const place = document.getElementById("RunningText");
-  const text1 = "Nongki", text2 = "Ngopi", text3 = "Ngebacot", text4 = "Bertanya", text5 = "Ngegabut";
+  const text1 = "Nongki", text2 = "Ngopi", text3 = "Ngebacot", text4 = "Bertanya", text5 = "Ngegabut", text6 = "Nyebat";
   let text = text1;
-  let lock=false, lnum=0;
+  let lock=false, lnum=0, speed = 125;
   const runTexts = ()=>{
     const runText = setInterval(()=>{
       if (lock){
@@ -21,7 +21,8 @@ const HomeSC = ()=>{
         lock = true;
         document.getElementById("cursor").classList.add("Ncursor");
         clearInterval(runText);
-        setTimeout(() => { runTexts(); document.getElementById("cursor").classList.remove("Ncursor"); }, 1500)
+        speed = 60;
+        setTimeout(() => { runTexts(); document.getElementById("cursor").classList.remove("Ncursor"); }, 2000)
       };
       if (lock&&lnum === 0){
         lock = false;
@@ -34,10 +35,15 @@ const HomeSC = ()=>{
         }else if (text === text4){
           text = text5
         }else if (text === text5){
+          text = text6
+        }else if (text === text6){
           text = text1
         };
+        clearInterval(runText);
+        speed = 125;
+        runTexts();
       };
-    }, 100)
+    }, speed)
   }
   const titles = "Programmer Comunity";
   let ltitle = "";
