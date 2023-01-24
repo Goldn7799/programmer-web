@@ -19,8 +19,9 @@ const HomeSC = ()=>{
       }
       if(lnum === text.length){
         lock = true;
+        document.getElementById("cursor").classList.add("Ncursor");
         clearInterval(runText);
-        setTimeout(() => { runTexts() }, 1000)
+        setTimeout(() => { runTexts(); document.getElementById("cursor").classList.remove("Ncursor"); }, 1500)
       };
       if (lock&&lnum === 0){
         lock = false;
@@ -203,7 +204,7 @@ const page = {
     ${component.Navs("Home")}
     <center class="Ntitle">
       <h1 id="h1title" style="margin-top: -100px; opacity: 0; z-index: 50;"></h1>
-      <p id="ptitle" style="margin-top: -50px; opacity: 0;">Tempat Nya <span id="RunningText"></span><span class="Ncursor">|</span> Para Programmer</p>
+      <p id="ptitle" style="margin-top: -50px; opacity: 0;">Tempat Nya <span id="RunningText"></span><span class="Ncursor" id="cursor">|</span> Para Programmer</p>
       <div style="opacity: 0; margin-top: -50px; display: none;" id="mouse" class="mouse-icon mouse-icon-light"><div class="wheel"></div></div>
     </center>
     <div id="homeMenu" style="display: none;">
