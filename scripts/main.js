@@ -48,6 +48,7 @@ const HomeSC = ()=>{
         document.getElementById("ptitle").style.marginTop = "";
         setTimeout(()=>{
           document.getElementById("ptitle").style.opacity = "1";
+          document.getElementById("mouse").style.display = "block";
           setTimeout(()=>{
             document.getElementById("mouse").style.marginTop = "";
             document.getElementById("changemode").style.marginTop = "";
@@ -201,9 +202,9 @@ const page = {
     </center>
     ${component.Navs("Home")}
     <center class="Ntitle">
-      <h1 id="h1title" style="margin-top: -100px; opacity: 0;"></h1>
+      <h1 id="h1title" style="margin-top: -100px; opacity: 0; z-index: 50;"></h1>
       <p id="ptitle" style="margin-top: -50px; opacity: 0;">Tempat Nya <span id="RunningText"></span><span class="Ncursor">|</span> Para Programmer</p>
-      <div style="opacity: 0; margin-top: -50px;" id="mouse" class="mouse-icon mouse-icon-light"><div class="wheel"></div></div>
+      <div style="opacity: 0; margin-top: -50px; display: none;" id="mouse" class="mouse-icon mouse-icon-light"><div class="wheel"></div></div>
     </center>
     <div id="homeMenu" style="display: none;">
     <canvas style="width: 1; height: ${(screen.height - 350)}px;"></canvas>
