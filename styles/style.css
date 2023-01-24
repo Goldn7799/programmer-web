@@ -10,6 +10,11 @@
 }
 
 body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
