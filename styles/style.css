@@ -9,7 +9,7 @@
   -o-border-radius: 50%;
 }
 
-html {
+body {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
