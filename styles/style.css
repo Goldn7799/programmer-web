@@ -38,6 +38,7 @@ nav {
 
 .Ntitle {
   margin-top: 25px;
+  z-index: 10;
 }
 
 .Ncursor {
