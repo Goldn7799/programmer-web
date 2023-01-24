@@ -174,7 +174,7 @@ const page = {
       <td>Syeif (<span class="admin">Admin</span>)</td>
     </tr>
     <tr>
-      <td id="prf3"><img src="./assets/fachriza.png" alt="Fachriza Potho"/></td>
+      <td id="prf3"><img src="./assets/fachrizax.jpeg" alt="Fachriza Potho"/></td>
       <td id="prf4"><img src="./assets/dika.jpg" alt="Dika Potho"/></td>
     </tr>
     <tr>
@@ -185,7 +185,7 @@ const page = {
       staffRes = `<tr>
       <td id="prf1"><img src="./assets/yusril.jpg" alt="Yusril Potho"/></td>
       <td id="prf2"><img src="./assets/syeif.jpg" alt="Syeif Potho"/></td>
-      <td id="prf3"><img src="./assets/fachriza.png" alt="Fachriza Potho"/></td>
+      <td id="prf3"><img src="./assets/fachrizax.jpeg" alt="Fachriza Potho"/></td>
       <td id="prf4"><img src="./assets/dika.jpg" alt="Dika Potho"/></td>
     </tr>
     <tr>
